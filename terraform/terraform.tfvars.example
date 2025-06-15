@@ -1,0 +1,12 @@
+# Copy this file to terraform.tfvars and fill in your values
+# DO NOT commit terraform.tfvars to version control
+
+resource_group_name = "devops-pipeline-rg"
+location           = "East US"
+prefix             = "devops-pipeline"
+vm_size            = "Standard_B1s"
+admin_username     = "azureuser"
+
+# Replace with your actual SSH public key
+# You can get this by running: cat ~/.ssh/id_rsa.pub
+ssh_public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC... your-email@example.com"

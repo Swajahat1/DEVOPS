@@ -1,0 +1,50 @@
+# Terraform files
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+.terraform/
+.terraform.lock.hcl
+terraform.tfplan
+terraform_output.json
+
+# Ansible files
+inventory.ini
+*.retry
+
+# Jenkins files
+jenkins_home/
+
+# SSH keys
+*.pem
+*.key
+id_rsa*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Docker
+.docker/
+
+# Azure CLI
+.azure/
