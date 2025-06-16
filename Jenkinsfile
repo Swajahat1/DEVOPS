@@ -6,8 +6,8 @@ pipeline {
         AZURE_CLIENT_ID = credentials('1d1775eb-7ca9-4356-a242-aee191fc4d20')
         AZURE_CLIENT_SECRET = credentials('71384082-b5c5-4ae8-acd5-af0822a95dc7')
         AZURE_TENANT_ID = credentials('78a31f2f-a764-4a56-a3b9-832c487e790b')
-        SSH_KEY = credentials('d1775eb-7ca9-4356-a242-aee191fc4d20')
-        TF_VAR_ssh_public_key = credentials('ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCm+3GpYp1p0ac+P+zpozWewT8ijx9XJKHDDypfwMT2vOs3hej2TMctp/T8c+NFqcvbtPc0o5zI2QlyJAxuLq/oq7/VL0QNTJB1OMQDfXVBootSpk20strGItOs26hsZh9eHrguFoiUcSYP0LZljMaPhLn14yrVCWjKnVokFdXcVJ2CvMATC6KoypAsV1bXJChaggP1KzLr4y6+z0tWv797YUqO8RTeDvbGiZVy63AOhpQ+Wi5xJ+q4SxJZq2b8yd/Qbi8yv5yOaICJgUhVOT6MQPIykGUjUJjoqFgz+7jRlDhN6xZmTXrCiVPEZ+wFi5E4HS59nhEoy1xuh1RiP8Ia9qWezRpAxuWuJXDAWRceGaBeA5ewJADfCXCBlPyWgj5r7Ou4/KM34+VhtkgUfXjf4NDMStu59M5tnau9T7MHmvmY7B2tkTTqp5laP6oUCPjG0/4nLTsK+yZZ4SoKnlTzLaKbQVr+IBT0nVuFdN1pFcNBZ8x/4HXJaWfeVHa2o0hWoW1EDUEwrWbxw8+jpHx1PjcareCFWzG32Z9ZvDLyUdDABgO44pW0Dy2O8wSLDuKHU32gzFlN1tryAivSfv8x8U7Z/gDFvT82b+6r+wzHN/FozfizpU031UeVIEDOIovTAItMP6B+cVnPiVA2bFhuRb6ogVmDS9AVrj5Qhuwumw== syed@SandboxHost-638855889453690753')
+        SSH_KEY = credentials('azureuser')
+        TF_VAR_ssh_public_key = credentials('azure-vm-ssh-public-key')
         ANSIBLE_HOST_KEY_CHECKING = 'False'
         ANSIBLE_STDOUT_CALLBACK = 'yaml'
     }
